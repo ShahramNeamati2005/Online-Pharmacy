@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+header {
+    background-color: #333;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* فاصله‌گذاری بین لوگو و آیتم‌ها */
+    align-items: center;
+    max-width: 1200px; /* حداکثر عرض نوار ناوبری */
+    margin: 0 auto; /* مرکز چین کردن نوار ناوبری */
+    padding: 0 20px; /* افزودن کمی فضای داخلی برای نوار ناوبری */
+}
+
+.logo img {
+    height: 80px; /* ارتفاع لوگو */
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px; /* فاصله بین آیتم‌های منو */
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease,color 0.3s ease;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background-color: #555;
+    color: #fff;
+    border: #333;
+    border-radius: 30px;
+}
+
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 0%;
+}
+
+.hero img {
+    width:100%;
+    height: auto;
+}
+.hero h1  {
+    font-family: 'Times New Roman', Times, sans-serif;
+    
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: #333; /* رنگ متن */
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.hero p {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 60%;
+    font-size: 1.75rem;
+    
+    color: #333; /* رنگ متن */
+    opacity: 0;
+    animation: fadeInUp 3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.about {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.about h1 {
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+
+
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex-basis: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+.about-text p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.about-images {
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.about-images img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.Services,
+.Products {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 10px;
+}
+
+.Services-grid,
+.Products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Services h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.Services-item,
+.Product-item {
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(22, 21, 21, 0.1);
+    padding: 25px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+#FB{
+    background-color: #333;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+#FB a{
+    color: #fff;
+    text-decoration: none;
+
+}
+#FB:hover{
+    background-color: #fff;
+}
+#FB a:hover{
+    color: #333;
+}
+#products {
+    background-color: #fff;
+}
+.ourproducts{
+    font-size: 30px;
+    text-align: center;
+}
+.product-grid {
+    display: flex;
+    gap: 20px;
+
+}
+
+.product-item {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 10px;
+
+}
+.img1{
+    height: 150px;
+    width: 150px;
+}
+.Contact-info{
+    text-align: left;
+    
+    
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px ;
+    text-align: right;
+}
+.footer-logo {
+    margin-bottom: 20px;
+    padding-right: 30px;
+    
+    
+}
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    padding-right: 30px;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.social-icons a:hover {
+    color: #0099ff;
+}
+#COPY{
+    text-align: center;
+}
+#COPY a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
